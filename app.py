@@ -3,6 +3,9 @@ import pandas as pd
 import numpy as np
 import joblib
 
+# Page Config must be the first streamlit command
+st.set_page_config(page_title="Student Performance AI", page_icon="🎓", layout="wide")
+
 # Load the trained model
 @st.cache_resource
 def load_model():
@@ -25,8 +28,6 @@ fjob_opts = ['at_home', 'health', 'other', 'services', 'teacher']
 reason_opts = ['course', 'other', 'home', 'reputation']
 guardian_opts = ['mother', 'father', 'other']
 yes_no_opts = ['no', 'yes']
-
-st.set_page_config(page_title="Student Performance AI", page_icon="🎓", layout="wide")
 
 # Custom CSS
 st.markdown("""

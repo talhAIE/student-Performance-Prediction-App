@@ -124,11 +124,11 @@ with st.form("prediction_form"):
         
         with col2:
             st.subheader("Support & Extras")
-            schoolsup = st.toggle("Extra Educational Support", value=False)
-            famsup = st.toggle("Family Educational Support", value=True)
-            paid = st.toggle("Extra Paid Classes", value=False)
-            nursery = st.toggle("Attended Nursery School", value=True)
-            higher = st.toggle("Wants Higher Education", value=True)
+            schoolsup = st.checkbox("Extra Educational Support", value=False)
+            famsup = st.checkbox("Family Educational Support", value=True)
+            paid = st.checkbox("Extra Paid Classes", value=False)
+            nursery = st.checkbox("Attended Nursery School", value=True)
+            higher = st.checkbox("Wants Higher Education", value=True)
 
     with tab3:
         col1, col2 = st.columns(2)
